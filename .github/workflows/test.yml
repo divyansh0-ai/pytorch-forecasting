@@ -112,7 +112,7 @@ jobs:
 
       - name: Run pytest
         shell: bash
-        run: python -m pytest
+        run: python -m pytest -rfE
 
   test-deps-2025:
     needs: pytest-nosoftdeps
@@ -146,7 +146,7 @@ jobs:
 
       - name: Run pytest
         shell: bash
-        run: python -m pytest
+        run: python -m pytest -rfE
 
   pytest:
     name: Run pytest
@@ -186,7 +186,7 @@ jobs:
 
       - name: Run pytest
         shell: bash
-        run: python -m pytest
+        run: python -m pytest -rfE
 
       - name: Statistics
         run: |
